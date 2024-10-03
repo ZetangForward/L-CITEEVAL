@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/niah_default.json
+eval_file: dataset/niah.json
+shot: 1
+ndoc: 1500
+task: niah

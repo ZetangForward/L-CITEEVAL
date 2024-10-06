@@ -60,26 +60,26 @@ python script/eval_correct.py --file result/l-citeeval-length/niah/1shot_Meta-Ll
 ## 📊 Evaluation Results
 Our evaluation currently includes the most commonly used long-context models (reported ctx length >= 64K), covering both closed-source and open-source models of different sizes and architectures.
 
-![](assets/citation_result1.png)![](assets/citation_result2.png)
+![](L-CiteEval/assets/citation_result1.png)![](L-CiteEval/assets/citation_result2.png)
 
 We also propose L-CiteEval-Length and L-CiteEval-Hardness (will be released soon). As two variants of the L-CiteEval benchmark, they aim to evaluate the performance of long-text models from the perspectives of different context lengths and varying levels of difficulty.
 
-![](assets/length.png)![](assets/hardness.png)
+![](L-CiteEval/assets/length.png)![](L-CiteEval/assets/hardness.png)
 
 
 
 ## 🌟 Q & A (See more details here)
 ### Q1: How the benchmark works?
 In the L-CiteEval benchmark, the model is required to generate a response (R) based on the question (Q) and the provided long reference context (R). To ensure the accuracy and verifiability of the response, the model is required to generate responses in a specific format, where each statement (S) is followed by a corresponding citation (C). This format facilitates a comprehensive evaluation of the model's response during the verification (V) phase.
-![](assets/pipeline.png)
+![](L-CiteEval/assets/pipeline.png)
 
 ### Q2: How to evaluate the results?
 For generation quality of different tasks, we provide corresponding automatic evaluation metrics. The assessment of citation quality follows a unified standard, which includes three metrics: Citation Recall (CR), Citation Precision (CP), and Citation F1 Score (F1).
-![](assets/dataset.png)
+![](L-CiteEval/assets/dataset.png)
 
 ### Q3: How the benchmark is created?
 The specific process for creating test data consists of three steps: Seed Data & Padding Data Sampling, Padding Data Filtering, and Length Extension.
-![](assets/make_data.png)
+![](L-CiteEval/assets/make_data.png)
 
 ## 📝 Citation
 If you find our work helpful, please cite our paper:

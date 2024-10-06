@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/narrativeqa_default.json
+eval_file: dataset/main/narrativeqa.json
+shot: 1
+ndoc: 1500
+task: narrativeqa

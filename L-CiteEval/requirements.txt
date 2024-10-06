@@ -1,0 +1,5 @@
+torch
+transformers
+vllm
+nltk
+rouge

@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/gov_report_default.json
+eval_file: dataset/l-citeeval-length/gov_report.json
+shot: 1
+ndoc: 1500
+task: gov_report

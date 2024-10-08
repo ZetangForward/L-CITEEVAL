@@ -26,7 +26,9 @@ pip install -r requirements.txt
 ```
 
 ### Data Prepare
+
 You can load and check L-CiteEval data using the following code:
+
 ```
 from datasets import load_dataset
 
@@ -34,16 +36,17 @@ datasets = ["narrativeqa", "natural_questions", "hotpotqa", "2wikimultihopqa", "
 
 for dataset in datasets:
     ### Load L-CiteEval
-    data = load_dataset('Jonaszky123/L-CiteEval', f"L-CiteEval-Data_{dataset}")
+    data = load_dataset('ZetangForward/L-CiteEval', f"L-CiteEval-Data_{dataset}")
 
     ### Load L-CiteEval-Length
-    data = load_dataset('Jonaszky123/L-CiteEval', f"L-CiteEval-Length_{dataset}")
+    data = load_dataset('ZetangForward/L-CiteEval', f"L-CiteEval-Length_{dataset}")
 
     ### Load L-CiteEval-Hardness
-    data = load_dataset('Jonaszky123/L-CiteEval', f"L-CiteEval-Hardness_{dataset}")
+    data = load_dataset('ZetangForward/L-CiteEval', f"L-CiteEval-Hardness_{dataset}")
 ```
 
-We recommand using the code below to download L-CiteEval data from [🤗 Hugging face](https://huggingface.co/datasets/ZetangForward/L-CiteEval). Once downloaded, place the data in the ```/data``` folder.
+We recommand using the code below to download L-CiteEval data from [🤗 Hugging face](https://huggingface.co/datasets/ZetangForward/L-CiteEval). Once downloaded, place the data in the ``/data`` folder.
+
 ```
 huggingface-cli download --repo-type dataset --resume-download ZetangForward/L-CiteEval --local-dir data/
 ```

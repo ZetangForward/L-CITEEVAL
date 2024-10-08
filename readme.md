@@ -6,9 +6,8 @@
 
 - 2024/10/04 Code & Data will be released in a week.
 - 2024/10/06 Code & Data are released. **L-CiteEval-Hardness** and **L-CiteEval-Length** data will be released soon.
-- 2024/10/07 Format of Code & Data are fixed. **L-CiteEval-Hardness** and **L-CiteEval-Length** data are released.
-  - We upload the data in Huggingface and remove the /data folder in this repo.
-
+- 2024/10/08 Format of Code & Data are fixed. **L-CiteEval-Hardness** and **L-CiteEval-Length** data are released.
+  - We upload the data in Huggingface and remove the /data folder in this repo.  [🤗 Hugging face](https://huggingface.co/datasets/Jonaszky123/L-CiteEval)
 ## 🔍 Benchmark Quickview
 
 *L-CiteEval* is a multi-task long-context understanding with citation benchmark, covering **5 task categories**, including single-document question answering, multi-document question answering, summarization, dialogue understanding, and synthetic tasks, encompassing **11 different long-context tasks**. The context lengths for these tasks range from **8K to 48K**.

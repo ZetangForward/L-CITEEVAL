@@ -45,10 +45,10 @@ for dataset in datasets:
     data = load_dataset('Jonaszky123/L-CiteEval', f"L-CiteEval-Hardness_{dataset}")
 ```
 
-We recommand using the code below to download L-CiteEval data from [🤗 Hugging face](https://huggingface.co/datasets/ZetangForward/L-CiteEval). Once downloaded, place the data in the ``/data`` folder.
+We recommand using the code below to download L-CiteEval data from [🤗 Hugging face](https://huggingface.co/datasets/Jonaszky123/L-CiteEval). Once downloaded, place the data in the ``/data`` folder.
 
 ```
-huggingface-cli download --repo-type dataset --resume-download ZetangForward/L-CiteEval --local-dir data/
+huggingface-cli download --repo-type dataset --resume-download Jonaszky123/L-CiteEval --local-dir data/
 ```
 
 All data in L-CiteEval follows the format below:

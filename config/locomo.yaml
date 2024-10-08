@@ -1,6 +1,0 @@
----
-prompt_file: prompt/locomo_default.json
-eval_file: dataset/locomo.json
-shot: 1
-ndoc: 1500
-task: locomo

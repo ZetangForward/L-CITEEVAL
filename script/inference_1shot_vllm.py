@@ -40,10 +40,8 @@ def make_demo(item, prompt, ndoc=None, doc_prompt=None, instruction=None, test=F
         if ndoc == 0:
             prompt = prompt.replace("{D}\n", "")
         else:
-            try:
-                doc_list = item["docs"][:ndoc]
-            except:
-                import pdb;pdb.set_trace()
+            doc_list = item["docs"][:ndoc]
+
             text = "".join([make_doc_prompt(doc, doc_id, doc_prompt) for doc_id, doc in enumerate(doc_list)])
 
             prompt = prompt.replace("{D}", text)
@@ -183,11 +181,8 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="inference")
     parser.add_argument("--config", type=str, default=None, help="Path to the config file")
-    parser.add_argument("--bsz", type=int, default=1)
     parser.add_argument("--model", type=str)
     parser.add_argument("--exp", type=str)
-    parser.add_argument("--length", type=int)
-    parser.add_argument("--port", type=int)
     parser.add_argument("--num_port", type=int)
     args = parser.parse_args()
     config = yaml.safe_load(open(args.config)) if args.config is not None else {}

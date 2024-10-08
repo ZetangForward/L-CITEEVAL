@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/multi_news_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/multi_news.json
+shot: 1
+ndoc: 1500
+task: multi_news

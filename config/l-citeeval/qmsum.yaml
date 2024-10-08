@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/qmsum_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/qmsum.json
+shot: 1
+ndoc: 1500
+task: qmsum

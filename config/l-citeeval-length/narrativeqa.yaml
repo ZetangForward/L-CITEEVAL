@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/narrativeqa_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Length/narrativeqa.json
+shot: 1
+ndoc: 1500
+task: narrativeqa

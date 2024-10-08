@@ -11,5 +11,9 @@ for i in 0 1 2 3 4 5 6 7;do
         --swap-space 0 &
 done
 
-    
-python script/inference_1shot_vllm.py --config config/narrativeqa.yaml --bsz 1 --model model_path --exp citation --num_port 8
+### inference
+# config: Specify the config file of your generation
+# model: The path of your model
+# exp: Define the experiment class, choosing between 'l-citeeval' (main experiment, L-CiteEval),  'l-citeeval-length' and 'l-citeeval-hardness'
+# num_port: Number of gpus in use
+python script/inference_1shot_vllm.py --config config/l-citeeval/narrativeqa.yaml --model model_path --exp l-citeeval --num_port 8

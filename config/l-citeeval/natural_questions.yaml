@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/natural_questions_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/natural_questions.json
+shot: 1
+ndoc: 1500
+task: natural_questions

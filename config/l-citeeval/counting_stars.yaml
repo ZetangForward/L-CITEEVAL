@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/counting_stars_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/counting_stars.json
+shot: 1
+ndoc: 1500
+task: counting_stars

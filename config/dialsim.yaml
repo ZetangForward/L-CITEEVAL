@@ -1,6 +1,0 @@
----
-prompt_file: prompt/dialsim_default.json
-eval_file: dataset/dialsim.json
-shot: 1
-ndoc: 1500
-task: dialsim

@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/hotpotqa_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/hotpotqa.json
+shot: 1
+ndoc: 1500
+task: hotpotqa

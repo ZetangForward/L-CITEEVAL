@@ -1,6 +1,0 @@
----
-prompt_file: prompt/multi_news_default.json
-eval_file: dataset/multi_news.json
-shot: 1
-ndoc: 1500
-task: multi_news

@@ -1,0 +1,6 @@
+---
+prompt_file: prompt/locomo_default.json
+eval_file: data/L-CiteEval/L-CiteEval-Data/locomo.json
+shot: 1
+ndoc: 1500
+task: locomo

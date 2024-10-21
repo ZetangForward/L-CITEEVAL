@@ -101,6 +101,7 @@ if __name__ == "__main__":
             if args.exp != 'l-citeeval-hardness':
                 for length_id in range(len(length_lst)):
                     length = refer[i]['length']
+                    temp[i]['docs'] = refer[i]['docs']
                     if args.exp == 'l-citeeval' and args.task == 'multi_news' and length > 40000: 
                         len_samples[40000].append(temp[i])
                         break
@@ -110,6 +111,7 @@ if __name__ == "__main__":
                         len_samples[length_lst[length_id]].append(temp[i])
                         break
             elif args.exp == 'l-citeeval-hardness':
+                temp[i]['docs'] = refer[i]['docs']
                 len_samples[refer[i][level]].append(temp[i])
 
     
